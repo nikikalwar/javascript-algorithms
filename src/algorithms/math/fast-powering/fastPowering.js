@@ -16,7 +16,7 @@ export default function fastPowering(base, power) {
 
   let powerNext;
   let baseNext;
-  if (powerNext < 0) {
+  if (power < 0) {
     powerNext = power * -1;
     baseNext = 1 / base;
     // console.log(base);
