@@ -14,13 +14,11 @@ export default function fastPowering(base, power) {
     return 1;
   }
 
-  let powerNext;
-  let baseNext;
   if (power < 0) {
-    powerNext = power * -1;
-    baseNext = 1 / base;
-    // console.log(base);
-    fastPowering(baseNext, powerNext);
+    const powerNext = power * -1;
+    const baseNext = 1 / base;
+    // console.log("sssss")
+    return fastPowering(baseNext, powerNext);
   }
 
   if (power % 2 === 0) {
